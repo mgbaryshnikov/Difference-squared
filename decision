@@ -1,0 +1,16 @@
+n = input()
+a = []
+t1 = ""
+t2 = ""
+for i in n:
+    a.append(int(i))
+a.sort()
+for i in a:
+    t1 = t1 + str(i)
+t1 = int(t1)
+a.reverse()
+for i in a:
+    t2 = t2 + str(i)
+t2 = int(t2)
+t3 = t2 - t1
+print(t3 * t3)
